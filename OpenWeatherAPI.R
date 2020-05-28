@@ -1,5 +1,9 @@
 
-#Pulls a 5 day forecast from the OpenWeather API's JSON endpoint and visualises the trend.
+#Pulls a 5 day forecast from the OpenWeather API's JSON endpoint and visualises the trend. This example opens and extracts specific values
+#from the JSON. To flatten the whole feed and place it in a tibble, you might use something like:
+#df <- flatten(raw_json)
+#df2 <- df
+#df2 <- as_tibble(rbind(df2, df))
 
 library(tidyverse)
 library(jsonlite)
